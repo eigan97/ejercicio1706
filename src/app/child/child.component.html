@@ -1,0 +1,9 @@
+  <p>{{ob.name}}</p>
+  <img src="{{ob.image}}">
+  <p><b>Location</b></p>
+  <p>{{cObj.location.name}}</p>
+  <!-- <p>{{ob.location.name}}</p> -->
+  <!-- <input type="text" value="{{ob.location.name}}" [(ngModel)]
+  ="ob.location.name"> -->
+  <input type="text" [(ngModel)]="cObj.location.name">
+  <button (click)="reset(ob)">Reset</button>
